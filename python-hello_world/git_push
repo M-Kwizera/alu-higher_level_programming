@@ -1,0 +1,3 @@
+git add .
+git commit -m "Modification made to file ..."
+git push
