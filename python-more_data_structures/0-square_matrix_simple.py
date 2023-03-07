@@ -1,4 +1,4 @@
-#!/usr/bin/pytho3
+#!/usr/bin/python3
 
 def square_matrix_simple(matrix=[]):
     matrix_2 = []
