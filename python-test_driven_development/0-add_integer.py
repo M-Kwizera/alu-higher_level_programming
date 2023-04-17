@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-# This function add_integer takes in two arguments and returns the sum of them
-
+# This function 'add_integer' takes in two arguments and returns the sum of the two.
 def add_integer(a, b=98):
     """Should the conditions be met, Raising the type error message"""
     if type(a) != int and type(a) != float:
