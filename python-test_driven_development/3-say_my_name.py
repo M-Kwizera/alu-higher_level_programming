@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""This module contains a function 
+"""This module contains a function
     'say_my_name '"""
 
 
