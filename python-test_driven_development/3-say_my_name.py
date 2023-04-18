@@ -11,7 +11,9 @@ def say_my_name(first_name, last_name):
         raise TypeError("first_name must be a string")
     if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
+    f_missing = (
+        "Traceback (most recent call last):\n...\nTypeError: say_my_name() missing 1 required positional argument: 'first_name'")
     if first_name is None:
         raise TypeError(
-            "Traceback (most recent call last):\n...\nTypeError: say_my_name() missing 1 required positional argument: 'first_name'")
+        )
     print(F"My name is {first_name} {last_name}")
