@@ -1,28 +1,32 @@
 #!/usr/bin/python3
 """
-This module takes in a matrix, divide every row by an argument divisor
+This module takes in a matrix,
+divide every row by an argument divisor
 """
 
 
 def matrix_divided(matrix, div):
-    """Check if matrix is valid, check rows for type integer."""
-    # Check if matrix is valid
-    if not all(isinstance(row, list) and all(isinstance(elem, (int, float)) for elem in row) for row in matrix):
-        raise TypeError(
-            "matrix must be a matrix (list of lists) of integers/floats")
+    """ A matrix function that will help us test """
 
-    # Check if all rows are of the same size
-    if not all(len(row) == len(matrix[0]) for row in matrix):
-        raise TypeError("Each row of the matrix must have the same size")
-
-    # Check if div is valid
-    if not isinstance(div, (int, float)):
+    TypeE = "matrix must be a matrix (list of lists) of integers/floats"
+    for raw in matrix:
+        if type(raw) != list:
+            raise TypeError(TypeE)
+        for data in raw:
+            if type(data) != int and type(data) != float:
+                raise TypeError(TypeE)
+    raw_size = len(matrix[0])
+    raw_sizeE = "Each row of the matrix must have the same size"
+    for raw in matrix:
+        if len(raw) != raw_size:
+            raise TypeError(raw_sizeE)
+    if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
-
     if div == 0:
         raise ZeroDivisionError("division by zero")
-
-    # Divide all elements of the matrix by div and round to 2 decimal places
-    new_matrix = [[round(elem/div, 2) for elem in row] for row in matrix]
-
+    new_matrix = []
+    for i in range(len(matrix)):
+        new_matrix.append(list())
+        for x in range(len(matrix[i])):
+            new_matrix[i].append(round(matrix[i][x] / div, 2))
     return new_matrix
