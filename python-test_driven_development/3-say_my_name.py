@@ -4,17 +4,12 @@
     'say_my_name '"""
 
 
-def say_my_name(first_name, last_name):
-    """Checking if first_name and last_name
-        are strings."""
-    if not isinstance(first_name, str):
-        raise TypeError("first_name must be a string")
-    if not isinstance(last_name, str):
-        raise TypeError("last_name must be a string")
-    f_missing = (
-        "Traceback (most recent call last):\n...\nTypeError: say_my_name()"
-        "missing 1 required positional argument: 'first_name'")
-    if first_name is None:
-        raise TypeError(f_missing)
+def say_my_name(first_name, last_name=""):
+    """ say_my_name returns my name is..."""
 
-    print(F"My name is {first_name} {last_name}")
+    if not isinstance(last_name, (str,)):
+        raise TypeError('last_name must be a string')
+    if not isinstance(first_name, (str,)):
+        raise TypeError('first_name must be a string')
+
+    print("My name is {} {}".format(first_name, last_name))
