@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+"""
+This module takes in a matrix, divide every row by an argument divisor
+"""
+
 
 def matrix_divided(matrix, div):
+    """Check if matrix is valid, check rows for type integer."""
     # Check if matrix is valid
     if not all(isinstance(row, list) and all(isinstance(elem, (int, float)) for elem in row) for row in matrix):
         raise TypeError(
