@@ -14,6 +14,6 @@ def say_my_name(first_name, last_name):
     f_missing = (
         "Traceback (most recent call last):\n...\nTypeError: say_my_name() missing 1 required positional argument: 'first_name'")
     if first_name is None:
-        raise TypeError(
-        )
+        raise TypeError(f_missing)
+
     print(F"My name is {first_name} {last_name}")
