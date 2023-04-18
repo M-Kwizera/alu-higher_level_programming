@@ -1,0 +1,20 @@
+I am testing for the following:
+first_name is string, 
+last_name is string,
+testing for both first_name and last_name are strings
+testing for missing 1 argument
+
+say_my_name = __import__(3-say_my_name).say_my_name
+>>> say_my_name(2, "Smith")
+...
+TypError: first_name must be a string
+>>> say_my_name ("John", 3)
+Traceback (most recent call last):
+...
+TypError: last_name must be a string
+>>> say_my_name ("John", "Smith")
+My name is John Smith
+>>> say_my_name ()
+Traceback (most recent call last):
+...
+TypError: say_my_name() is missing 1 required argument: 'first_name'
