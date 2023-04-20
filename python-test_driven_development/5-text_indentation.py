@@ -5,11 +5,14 @@ each of these characters: '.'',' '?' and ':' """
 
 
 def text_indentation(text):
+    """text_indentation indents two lines
+    after characters mentioned above.
+    """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    text = text.strip()
 
-    print(text)
+    for delim in ".:?":
+        text = (delim + "\n\n").join(
+            [line.strip(" ") for line in text.split(delim)])
 
-
-text_indentation("awesome")
+    print("{}".format(text), end="")
