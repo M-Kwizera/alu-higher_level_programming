@@ -4,7 +4,10 @@
 
 class Base:
 
-    """Base"""
+    """Class Base is a basic
+    representation of what a
+    simple python3 class looks
+    like"""
 
     __nb_objects = 0
 
