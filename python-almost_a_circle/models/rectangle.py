@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """Rectangle inherits from Base"""
 
 Base = __import__("base").Base
