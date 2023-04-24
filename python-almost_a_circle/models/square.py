@@ -16,7 +16,7 @@ class Square(Rectangle):
         w = self.height
         l = self.x
         o = self.y
-        return ("[Square] ({}) {}/{} - {}".format(m, w, l, b))
+        return ("[Square] ({}) {}/{} - {}".format(m, w, l, o))
 
     @property
     def size(self):
