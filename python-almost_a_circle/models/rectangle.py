@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-import base
+from models.base import Base
 
 """Rectangle inherits from Base"""
 
 # Base = __import__("base").Base
 
 
-class Rectangle(base.Base):
+class Rectangle(Base):
 
     """Class Rectangle inherits from class base
     that is in the same directory(base.py)."""
