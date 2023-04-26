@@ -1,1 +1,2 @@
-The "Almost a circle" Directory
+#!/usr/bin/bash
+A project for almost a circle
