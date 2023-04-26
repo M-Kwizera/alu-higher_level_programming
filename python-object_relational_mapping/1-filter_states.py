@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""module to list states starting with N"""
+""" module list states
+from database"""
 
 if __name__ == "__main__":
     import MySQLdb
@@ -9,10 +10,11 @@ if __name__ == "__main__":
     cur = db.cursor()
     cur.execute("""SELECT * FROM states ORDER BY states.id ASC""")
     result = cur.fetchall()
-    # Displaying names starting with N
+    # display elements with N
+    # only by taking comparing their first letter in tuple
     for i in result:
         if i[1][0] == 'N':
             print(i)
-    # closing the fetch
+    # close cursor and db
     cur.close()
     db.close()

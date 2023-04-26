@@ -1,2 +1,1 @@
-!#/usr/bin/bash
-Connecting MYSQL to Python
+python object oriented

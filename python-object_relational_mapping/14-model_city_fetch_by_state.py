@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module that that contains cities in state"""
+""" module cities in state """
 
 
 if __name__ == "__main__":

@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""First state module"""
+""" just first fetch """
 
 
 if __name__ == "__main__":

@@ -1,16 +1,19 @@
 #!/usr/bin/python3
-"""Module that retrieve database"""
+""" module list states
+from database"""
 
 if __name__ == "__main__":
     import MySQLdb
     from sys import argv
+    # port and host are default local and 3306
     db = MySQLdb.connect(user=argv[1], passwd=argv[2], db=argv[3])
     cur = db.cursor()
-    # Usual SQL querry
+    # use string formating to be specific
     cur.execute("SELECT * FROM states WHERE states.name = '{}'\
     ORDER BY states.id ASC".format(argv[4]))
     result = cur.fetchall()
-    # Navigating through the arguments
+    # check if second argument of tuple
+    # is same as the passed argument
     for i in result:
         if i[1] == argv[4]:
             print(i)

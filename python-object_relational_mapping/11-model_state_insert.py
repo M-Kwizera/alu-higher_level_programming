@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Add a new state/Louisiana"""
+""" adds a new state """
 
 
 if __name__ == "__main__":

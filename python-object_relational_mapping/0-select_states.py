@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""A module that lists all states from htbn"""
+""" module list states
+from database"""
 
 if __name__ == "__main__":
     import MySQLdb

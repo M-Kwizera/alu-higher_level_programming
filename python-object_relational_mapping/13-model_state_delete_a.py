@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""module that deletes all states with letter a"""
+""" module delete states """
 
 
 if __name__ == "__main__":

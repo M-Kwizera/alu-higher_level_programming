@@ -7,7 +7,7 @@ from sqlalchemy.orm import relationship
 
 class City(Base):
     """
-    City class inherits from Base
+    City class inherits from State
     """
     __tablename__ = 'cities'
     id = Column('id', Integer, primary_key=True, nullable=False)

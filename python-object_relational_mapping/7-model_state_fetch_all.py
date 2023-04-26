@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A module that lists all states from db"""
+""" module gets all states """
 
 import sys
 from sqlalchemy import (create_engine)
