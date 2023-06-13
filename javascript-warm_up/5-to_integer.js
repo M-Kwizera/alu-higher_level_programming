@@ -1,7 +1,8 @@
 #!/usr/bin/node
-arg = process.argv;
-if (typeof (arg) != 'number') {
+const arg = process.argv;
+const conversion = Number(arg[2]);
+if (conversion) {
+    console.log(`My number: ${arg[2]}`);
+} else {
     console.log('Not a number');
-} else if (typeof(arg) == 'number') {
-    console.log(Number(arg));
 }
