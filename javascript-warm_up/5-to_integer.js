@@ -1,4 +1,4 @@
-// #!/usr/bin/node
+#!/usr/bin/node
 arg = process.argv;
 if (typeof (arg) != 'number') {
     console.log('Not a number');
