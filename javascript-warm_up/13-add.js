@@ -1,7 +1,8 @@
 #!/usr/bin/node
 function add(int1, int2) {
-    let sum = (int1 + int2);
-    return sum;
+    return int1 + int2;
 }
 
-console.log(add(2, 5));
+module.exports = {
+    add: add
+};
