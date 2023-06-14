@@ -1,12 +1,17 @@
 #!/usr/bin/node
-const key_word = 'C is fun';
-const argument = process.argv;
-const conversion = Number(argument[2]);
 
-// console.log(typeof(conversion))
+const { argv } = process;
 
-if (typeof(conversion) != 'number') {
+const numArg = Number(argv[2]);
+
+const printMessage = (num) => {
+  if (!num) {
     console.log('Missing number of occurrences');
-} else {
-    console.log((key_word + '\n'). repeat(conversion));
-}
+  } else {
+    Array(num).fill('C is fun').forEach((message) => {
+      console.log(message);
+    });
+  }
+};
+
+printMessage(numArg);
