@@ -1,2 +1,4 @@
 #!/usr/bin/node
-console.log('i');
+class Rectangle {
+    
+}
