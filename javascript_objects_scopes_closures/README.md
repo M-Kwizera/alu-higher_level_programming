@@ -1,1 +1,1 @@
-Objects, closures, classes in JavaScript.
+javascript_objects_scopes_ces
